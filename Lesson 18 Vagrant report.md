@@ -59,9 +59,13 @@ Vagrant.configure("2") do |config|
       box.vm.provider "virtualbox" do |v|
         v.memory = boxconfig[:memory]
         v.cpus = boxconfig[:cpus]
+        
       end
+      
     end
+    
   end
+  
 end
 
 2. ВМ запущена командой `vagrant up`.
