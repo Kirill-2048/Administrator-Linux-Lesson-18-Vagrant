@@ -78,20 +78,25 @@ Vagrantfile:
 text
 
 5. Подключен репозиторий ELRepo:
-```bash
+
 sudo yum install -y https://www.elrepo.org/elrepo-release-8.el8.elrepo.noarch.rpm
+
 6.	Установлено новое ядро из репозитория elrepo-kernel:
-bash
+
 sudo yum --enablerepo elrepo-kernel install kernel-ml -y
+
 7.	Обновлена конфигурация загрузчика и установлено новое ядро по умолчанию:
-bash
+
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+
 sudo grub2-set-default 0
+
 8.	ВМ перезагружена командой sudo reboot.
 9.	Проверена версия ядра после обновления:
-text
 [vagrant@kernel-update ~]$ uname -r
+
 <Вставьте сюда новую версию ядра, например, 6.6.10-1.el8.elrepo.x86_64>
 
 Результат:
+
 Ядро ОС на виртуальной машине было успешно обновлено. Новая версия ядра: <Новая версия ядра>.
