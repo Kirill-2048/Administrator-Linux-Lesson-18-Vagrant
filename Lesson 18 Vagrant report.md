@@ -73,12 +73,12 @@ Vagrantfile:
 3. Выполнено подключение к ВМ командой `vagrant ssh`.
 
 4. Проверена версия ядра **до** обновления:
+   
 [vagrant@kernel-update ~]$ uname -r
 
 <Вставьте сюда старую версию ядра, например, 4.18.0-277.el8.x86_64>
-text
 
-6. Подключен репозиторий ELRepo:
+5. Подключен репозиторий ELRepo:
 
 sudo yum install -y https://www.elrepo.org/elrepo-release-8.el8.elrepo.noarch.rpm
 
