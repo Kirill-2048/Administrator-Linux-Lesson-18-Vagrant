@@ -25,9 +25,13 @@
 Vagrantfile:
 
 #Описываем Виртуальные машины
+
 MACHINES = {
+
   #Указываем имя ВМ "kernel update"
+  
   "kernel-update" => {
+  
                   #Какой vm box будем использовать
                   :box_name => "generic/centos8s",
                   #Указываем box_version
@@ -40,8 +44,11 @@ MACHINES = {
 }
 
 Vagrant.configure("2") do |config|
+
   MACHINES.each do |boxname, boxconfig|
+  
     # Отключаем проброс общей папки в ВМ
+    
     config.vm.synced_folder ".", "/vagrant", disabled: true
 
     # Применяем конфигурацию ВМ
