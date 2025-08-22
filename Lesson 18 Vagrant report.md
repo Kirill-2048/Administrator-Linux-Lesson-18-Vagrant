@@ -93,9 +93,9 @@ sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 sudo grub2-set-default 0
 
 8.	ВМ перезагружена командой sudo reboot.
-9.	
+   
 10.	Проверена версия ядра после обновления:
-11.	
+    
 [vagrant@kernel-update ~]$ uname -r
 
 <Здесь должна быть новая версия ядра>
