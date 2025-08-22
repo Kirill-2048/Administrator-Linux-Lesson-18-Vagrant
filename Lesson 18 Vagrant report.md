@@ -11,9 +11,9 @@
 ## Выполнение
 
 ### Предварительные требования
-* Хостовая система: Ubuntu 22.04 Desktop
+* Хостовая система: Ubuntu 21.3 Desktop
 * Vagrant: 2.4.8
-* VirtualBox: <Введите `VBoxManage --version`>
+* VirtualBox: 7.0
 
 ### Процесс выполнения
 1. Создан Vagrantfile с конфигурацией ВМ:
